@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  padding-bottom: 80px; /* space for navbar */
+}
+
+/* Bottom navbar */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: lightblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
+
+/* Items */
+.nav-item {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  flex: 1;
+  text-decoration: none;
+}
+
+/* Icons */
+.nav-item i {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 4px;
+  transition: 0.2s;
+}
+
+/* Tap animation */
+.nav-item:active i {
+  transform: scale(0.7);
+}
+
+/* Active page */
+.nav-item.active {
+  color: black;
+}
+.nav-item.active i {
+  color: black;
+  transform: scale(1.2);
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Me</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #f4f7fb;
+    }
+
+    .page {
+      padding: 20px;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #075E54, #128C7E);
+      color: white;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      margin-top: 15px;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      background: #25D366;
+      color: white;
+      font-size: 15px;
+    }
+
+    .whatsapp-btn {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      margin-top: 10px;
+      background: #075E54;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Contact Me</h1>
+    <p>Send message directly 🚀</p>
+  </div>
+
+  <!-- WHATSAPP MESSAGE -->
+  <div class="card">
+    <h3>💬 WhatsApp Message</h3>
+
+    <p>Click below to send message directly to my WhatsApp</p>
+
+    <a class="whatsapp-btn"
+       href="https://wa.me/9047465713?text=Hi%20I%20visited%20your%20portfolio%20and%20want%20to%20contact%20you"
+       target="_blank">
+      Send on WhatsApp
+    </a>
+  </div>
+
+  <!-- EMAIL FORM (REAL WORKING) -->
+  <div class="card">
+    <h3>📩 Send Message (Email)</h3>
+
+    <!-- IMPORTANT: replace YOUR_EMAIL in formspree -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+  </div>
+
+</div>
+
+<!-- NAVBAR -->
+<div class="bottom-nav">
+
+  <a href="index.html" class="nav-item">
+    <i class="fa-solid fa-house"></i>
+    Home
+  </a>
+
+  <a href="about.html" class="nav-item">
+    <i class="fa-solid fa-user"></i>
+    About
+  </a>
+
+  <a href="projects.html" class="nav-item">
+    <i class="fa-solid fa-diagram-project"></i>
+    Projects
+  </a>
+
+  <a href="contact.html" class="nav-item active">
+    <i class="fa-solid fa-phone"></i>
+    Contact
+  </a>
+
+</div>
+
+</body>
+</html>

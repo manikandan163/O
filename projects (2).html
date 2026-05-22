@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #f4f7fb;
+    }
+
+    .page {
+      padding: 20px;
+    }
+
+    /* HEADER */
+    .header {
+      background: linear-gradient(135deg, #075E54, #128C7E);
+      color: white;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    /* PROJECT GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    /* CARD */
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      transition: 0.2s;
+    }
+
+    .card:active {
+      transform: scale(0.98);
+    }
+
+    .card h3 {
+      margin: 0;
+      color: #075E54;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #555;
+      margin: 8px 0;
+    }
+
+    /* TAGS */
+    .tags {
+      margin: 8px 0;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e9f7f5;
+      color: #075E54;
+      padding: 5px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      margin-right: 5px;
+      margin-top: 5px;
+    }
+
+    /* BUTTONS */
+    .btns {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      flex: 1;
+      text-align: center;
+      padding: 8px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 13px;
+      color: white;
+    }
+
+    .live {
+      background: #25D366;
+    }
+
+    .github {
+      background: #333;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>My Projects</h1>
+    <p>Some of my real work as a Full Stack Developer</p>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="grid">
+
+    <!-- PROJECT 1 -->
+    <div class="card">
+      <h3>E-Commerce Website</h3>
+      <p class="desc">
+        Full stack shopping website with cart, login and product system.
+      </p>
+
+      <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+      </div>
+
+      <div class="btns">
+        <a href="#" class="btn live">Live Demo</a>
+        <a href="#" class="btn github">GitHub</a>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p class="desc">
+        Personal portfolio website with responsive design and animations.
+      </p>
+
+      <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+      </div>
+
+      <div class="btns">
+        <a href="#" class="btn live">Live Demo</a>
+        <a href="#" class="btn github">GitHub</a>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="card">
+      <h3>Login System</h3>
+      <p class="desc">
+        Simple login and signup system with validation.
+      </p>
+
+      <div class="tags">
+        <span class="tag">JavaScript</span>
+        <span class="tag">UI Design</span>
+      </div>
+
+      <div class="btns">
+        <a href="#" class="btn live">Live Demo</a>
+        <a href="#" class="btn github">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- NAVBAR -->
+<div class="bottom-nav">
+
+  <a href="index.html" class="nav-item">
+    <i class="fa-solid fa-house"></i>
+    Home
+  </a>
+
+  <a href="about.html" class="nav-item">
+    <i class="fa-solid fa-user"></i>
+    About
+  </a>
+
+  <a href="projects.html" class="nav-item active">
+    <i class="fa-solid fa-diagram-project"></i>
+    Projects
+  </a>
+
+  <a href="contact.html" class="nav-item">
+    <i class="fa-solid fa-phone"></i>
+    Contact
+  </a>
+
+</div>
+
+</body>
+</html>
